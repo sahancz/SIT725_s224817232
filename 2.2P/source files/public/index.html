@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A simple Express calculator for SIT725 Task 2.2P"
+    />
+    <title>SIT725 Addition Service</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Addition service</h1>
+      <p>
+        Enter two numbers below. The calculation will be completed by the
+        Express server.
+      </p>
+
+      <form id="calculator-form">
+        <label for="num1">First number:</label>
+        <input
+          id="num1"
+          name="num1"
+          type="number"
+          step="any"
+          value="5"
+          required
+        />
+
+        <label for="num2">Second number:</label>
+        <input
+          id="num2"
+          name="num2"
+          type="number"
+          step="any"
+          value="7"
+          required
+        />
+
+        <button type="submit">Add numbers</button>
+      </form>
+
+      <div id="result" class="result" aria-live="polite">
+        <span>Result:</span>
+        <strong>12</strong>
+        <code>GET /api/add?num1=5&amp;num2=7</code>
+      </div>
+
+      <hr />
+      <p class="footer">
+        SIT725 Task 2.2P - Node.js and Express web server
+      </p>
+    </div>
+  </body>
+</html>
