@@ -24,7 +24,7 @@ that adds two numbers on the server.
 
    ```bash
    git clone https://github.com/sahancz/SIT725_s224817232.git
-   cd SIT725_s224817232
+   cd "SIT725_s224817232/2.2P/source files"
    ```
 
 2. Install the dependencies:
